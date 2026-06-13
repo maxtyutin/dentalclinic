@@ -461,22 +461,20 @@ img {
 }
 
 .promo-card {
-  position: relative;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
   color: var(--white);
   border-radius: var(--border-radius-lg);
-  padding: 50px;
+  padding: 40px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+  gap: 30px;
   box-shadow: var(--shadow-lg);
 }
 
 .promo-card-content {
   flex: 1;
   z-index: 2;
-  max-width: 65%;
 }
 
 .promo-tag {
@@ -519,17 +517,16 @@ img {
 }
 
 .promo-card-image {
-  position: absolute;
-  right: -30px;
-  bottom: -20px;
-  width: 45%;
-  height: 90%;
+  flex-shrink: 0;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
   background-image: url('images/implant.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-lg);
   z-index: 1;
-  opacity: 0.85;
 }
 
 .consult-card {
@@ -1175,15 +1172,48 @@ img {
     font-size: 15px;
   }
   
-  .navbar {
-    height: 75px;
+  /* Hide phone number and working hours in header on all mobile/tablet screens */
+  .nav-phone {
+    display: none;
   }
+  
+  .navbar {
+    height: 70px;
+    gap: 12px;
+  }
+  
   .nav-menu {
     display: none;
   }
   
+  /* Shrink the callback button in the header */
+  .navbar .btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
   .hero-title {
     font-size: 2.8rem;
+  }
+  
+  /* Redesign promo card to stack vertically and center the circular image */
+  .promo-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 24px;
+    gap: 24px;
+  }
+  .promo-card-content {
+    max-width: 100%;
+  }
+  .promo-card-image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: var(--shadow-lg);
   }
   
   .services-tabs {
@@ -1213,27 +1243,16 @@ img {
 }
 
 @media (max-width: 500px) {
-  /* Collapse header contacts to fit screen width */
-  .nav-phone {
-    display: none;
-  }
-  .navbar {
-    gap: 10px;
-  }
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   .logo-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
-  }
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.85rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
   }
   
-  /* Hero title and stats adjustments */
+  /* Hero adjustments */
   .hero-title {
     font-size: 2.2rem;
   }
@@ -1255,12 +1274,6 @@ img {
   /* Cards padding reduction */
   .hero-card, .promo-card, .consult-card {
     padding: 24px 20px;
-  }
-  .promo-card-content {
-    max-width: 100%;
-  }
-  .promo-card-image {
-    display: none; /* Hide implant image to avoid overlap with text on narrow screens */
   }
   .promo-title, .consult-title {
     font-size: 1.8rem;
