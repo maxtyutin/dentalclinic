@@ -6,6 +6,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
+  // --- Configuration ---
+  const TARGET_EMAIL = 'maxtyutin@gmail.com'; // Укажите здесь почту, куда должны приходить заявки
+
   // --- Sticky Header Scroll Effect ---
   const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
@@ -143,18 +146,31 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Mock API call / Save to LocalStorage
-      const lead = {
-        name,
-        phone,
-        service,
-        date: new Date().toISOString()
-      };
-
-      // Retrieve existing leads or create new list
-      const leads = JSON.parse(localStorage.getItem('clinic_leads') || '[]');
-      leads.push(lead);
-      localStorage.setItem('clinic_leads', JSON.stringify(leads));
+      // Отправка заявки на почту через Formsubmit AJAX
+      fetch(`https://formsubmit.co/ajax/${TARGET_EMAIL}`, {
+        method: "POST",
+        headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            "Имя": name,
+            "Телефон": phone,
+            "Услуга": service
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Заявка отправлена на почту:', data);
+        // Резервное сохранение в LocalStorage
+        const lead = { name, phone, service, date: new Date().toISOString() };
+        const leads = JSON.parse(localStorage.getItem('clinic_leads') || '[]');
+        leads.push(lead);
+        localStorage.setItem('clinic_leads', JSON.stringify(leads));
+      })
+      .catch(error => {
+        console.error('Ошибка отправки заявки:', error);
+      });
 
       // Close modal if open
       if (modal.classList.contains('open')) {
@@ -166,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show Success message
       showToast(`Спасибо, ${name}! Ваша заявка принята. Мы перезвоним вам в течение 15 минут.`);
-      console.log('Новый лид сохранен:', lead);
+      console.log('Заявка отправлена в обработку.');
     });
   });
 
