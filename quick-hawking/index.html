@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стоматологическая клиника Имплант Тайм в Москве на Арбате. Профессиональная дентальная имплантация Nobel Biocare, Straumann, Lenmiriot. Спецпредложения All-on-4, брекеты, исправление прикуса. Запись на первичный осмотр.">
+  <title>Имплант Тайм — Центр дентальной имплантологии на Арбате</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons (loaded via CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- HEADER / NAVIGATION --- -->
+  <header class="header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Основная навигация">
+        <a href="#" class="logo-wrapper" id="nav-logo-link">
+          <div class="logo-icon">ИТ</div>
+          <span class="logo-text">Имплант<span>Тайм</span></span>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link" id="nav-about-link">О клинике</a></li>
+          <li><a href="#promotions" class="nav-link" id="nav-promotions-link">Акции</a></li>
+          <li><a href="#services" class="nav-link" id="nav-services-link">Услуги и цены</a></li>
+          <li><a href="#faq" class="nav-link" id="nav-faq-link">Вопросы и ответы</a></li>
+          <li><a href="#contacts" class="nav-link" id="nav-contacts-link">Контакты</a></li>
+        </ul>
+        
+        <div class="nav-contacts">
+          <div class="nav-phone">
+            <a href="tel:+74958774929" class="nav-phone-num" id="header-phone-link">+7 (495) 877-49-29</a>
+            <span class="nav-phone-label">ежедневно с 10:00 до 21:00</span>
+          </div>
+          <button class="btn btn-primary js-open-modal" data-service="Заказ обратного звонка" id="header-call-btn">
+            <i class="fa-solid fa-phone"></i> Заказать звонок
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- --- MAIN CONTENT --- -->
+  <main>
+    
+    <!-- --- HERO SECTION --- -->
+    <section class="hero" id="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fa-solid fa-location-dot"></i> Москва, м. Арбатская (5 мин пешком)</span>
+          <h1 class="hero-title">Центр дентальной имплантологии <span>Имплант Тайм</span></h1>
+          <p class="hero-subtitle">Восстановление зубов любой сложности за 1 день с пожизненной гарантией. Инновационные имплантаты от ведущих брендов мира.</p>
+          
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary" id="hero-services-btn">Смотреть услуги</a>
+            <button class="btn btn-secondary js-open-modal" data-service="Первичный прием имплантолога" id="hero-book-btn">Записаться на прием</button>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">99.8%</span>
+              <span class="stat-label">приживаемость имплантатов</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">лет опыта ведущих врачей</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5000+</span>
+              <span class="stat-label">счастливых пациентов</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Interactive Glass Card -->
+        <div class="hero-card">
+          <h2 class="hero-card-title">Бесплатный первичный осмотр</h2>
+          <p class="hero-card-desc">Запишитесь сегодня и получите комплексное обследование полости рта за 1 ₽!</p>
+          <ul class="hero-card-benefits">
+            <li><span class="benefit-icon"><i class="fa-solid fa-check"></i></span> Консультация стоматолога-имплантолога</li>
+            <li><span class="benefit-icon"><i class="fa-solid fa-check"></i></span> Составление детального плана лечения</li>
+            <li><span class="benefit-icon"><i class="fa-solid fa-check"></i></span> Расчет стоимости «под ключ» без переплат</li>
+          </ul>
+          <form class="js-booking-form" id="hero-lead-form">
+            <input type="hidden" name="service" value="Бесплатная консультация">
+            <div class="form-group">
+              <input type="text" name="name" class="form-input" placeholder="Ваше имя" required id="hero-form-name">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required id="hero-form-phone">
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="hero-form-submit">Получить консультацию</button>
+            <p class="form-agreement">Нажимая кнопку, вы соглашаетесь с условиями конфиденциальности.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- PROMOTIONS & OFFERS --- -->
+    <section class="promo-section section-padding" id="promotions">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-tag">Выгодные предложения</span>
+          <h2 class="section-title">Акции клиники <span>Имплант Тайм</span></h2>
+        </div>
+        
+        <div class="promo-grid">
+          <!-- Nobel Biocare Card -->
+          <div class="promo-card">
+            <div class="promo-card-content">
+              <span class="promo-tag">Хит сезона</span>
+              <h3 class="promo-title">Имплантация Nobel Biocare</h3>
+              <p class="promo-desc">Премиальная шведско-американская система имплантации по специальной цене с установкой и пожизненной гарантией.</p>
+              <div class="promo-price">29 990 ₽ <span>/ под ключ</span></div>
+              <button class="btn btn-primary js-open-modal" data-service="Имплантация Nobel Biocare за 29 990 руб." id="promo-nobel-btn">Записаться по акции</button>
+            </div>
+            <div class="promo-card-image" role="img" aria-label="Схема имплантата Nobel Biocare"></div>
+          </div>
+          
+          <!-- All-on-4 Consultation Card -->
+          <div class="consult-card">
+            <h3 class="consult-title">Восстановление зубов All-on-4</h3>
+            <p class="consult-desc">Современный протокол лечения всей челюсти на 4 имплантатах. Подходит при полном отсутствии зубов.</p>
+            
+            <div class="consult-details">
+              <div class="consult-detail-item">
+                <div class="consult-detail-icon"><i class="fa-solid fa-coins"></i></div>
+                <div>
+                  <strong>Система Lenmiriot (Россия):</strong> от 84 990 ₽ за челюсть.
+                </div>
+              </div>
+              <div class="consult-detail-item">
+                <div class="consult-detail-icon"><i class="fa-solid fa-crown"></i></div>
+                <div>
+                  <strong>Система Nobel Biocare:</strong> от 129 990 ₽ за челюсть.
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn btn-secondary js-open-modal" data-service="Консультация по концепции All-on-4" id="promo-allon4-btn">Записаться на презентацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SERVICES & PRICES --- -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-tag">Наши услуги</span>
+          <h2 class="section-title">Цены на лечение <span>зубов</span></h2>
+        </div>
+        
+        <!-- Navigation Tabs -->
+        <div class="services-tabs" role="tablist" aria-label="Категории услуг">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="pane-impl" data-category="impl" id="tab-impl">Имплантация зубов</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="pane-ortho" data-category="ortho" id="tab-ortho">Ортодонтия (Брекеты)</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="pane-hyg" data-category="hyg" id="tab-hyg">Чистка и терапия</button>
+        </div>
+        
+        <!-- Tab Content Panes -->
+        <div class="services-content">
+          
+          <!-- PANE: Implantation -->
+          <div class="services-pane active" id="pane-impl" role="tabpanel" aria-labelledby="tab-impl">
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Имплантация «Lenmiriot» (Россия)</h3>
+                  <span class="service-item-price">13 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Надежная отечественная система дентальной имплантации. Отличный компромисс цены и качества.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Всё включено</span>
+                <button class="service-item-btn js-open-modal" data-service="Имплантация Lenmiriot (13990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Имплантация «Nobel Biocare» (Швеция/США)</h3>
+                  <span class="service-item-price">29 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Мировой лидер в имплантологии. Повышенная эстетика, ускоренное приживление и вечная гарантия производителя.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Всё включено</span>
+                <button class="service-item-btn js-open-modal" data-service="Имплантация Nobel Biocare (29990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Имплантация «Straumann» (Швейцария)</h3>
+                  <span class="service-item-price">49 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Элитная швейцарская система имплантатов. Подходит для сложных клинических случаев и моментальной нагрузки коронками.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Всё включено</span>
+                <button class="service-item-btn js-open-modal" data-service="Имплантация Straumann (49990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Имплантация All-on-4 «Lenmiriot»</h3>
+                  <span class="service-item-price">84 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Восстановление всего зубного ряда челюсти на четырех имплантах Lenmiriot. В стоимость входит установка 4 имплантатов и 4 абатментов.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Хирургия под ключ</span>
+                <button class="service-item-btn js-open-modal" data-service="All-on-4 Lenmiriot (84990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Имплантация All-on-4 «Nobel Biocare»</h3>
+                  <span class="service-item-price">129 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Премиальный протокол All-on-4 с использованием оригинальных компонентов Nobel Biocare. Максимальная надежность при атрофии костной ткани.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Оригинальные компоненты</span>
+                <button class="service-item-btn js-open-modal" data-service="All-on-4 Nobel Biocare (129990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- PANE: Orthodontics -->
+          <div class="services-pane" id="pane-ortho" role="tabpanel" aria-labelledby="tab-ortho">
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Металлическая лигатурная брекет-система</h3>
+                  <span class="service-item-price">39 900 ₽</span>
+                </div>
+                <p class="service-item-desc">Классическое ортодонтическое лечение металлическими брекетами (3M Gemini, Biomim). Высокая прочность и проверенный результат.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> На одну челюсть</span>
+                <button class="service-item-btn js-open-modal" data-service="Металлические брекеты (39900 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Эстетическая брекет-система</h3>
+                  <span class="service-item-price">121 990 ₽</span>
+                </div>
+                <p class="service-item-desc">Лечение с использованием незаметных, полупрозрачных керамических брекетов 3M Clarity Advanced. Идеально для взрослых пациентов.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Повышенная эстетика</span>
+                <button class="service-item-btn js-open-modal" data-service="Эстетические брекеты (121990 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- PANE: Therapy & Hygiene -->
+          <div class="services-pane" id="pane-hyg" role="tabpanel" aria-labelledby="tab-hyg">
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Профессиональная гигиена полости рта</h3>
+                  <span class="service-item-price">6 000 ₽</span>
+                </div>
+                <p class="service-item-desc">Комплексная чистка: ультразвуковое снятие зубного камня, метод AirFlow, бережная полировка пастой и финишное покрытие фторирующим гелем.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Раз в полгода</span>
+                <button class="service-item-btn js-open-modal" data-service="Профгигиена полости рта (6000 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Диагностическая ревизия и исследование</h3>
+                  <span class="service-item-price">4 590 ₽</span>
+                </div>
+                <p class="service-item-desc">Комплексная диагностика кариозных полостей, рентгенологическая ревизия зуба, оценка скрытых воспалительных процессов под коронками/пломбами.</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> Глубокая диагностика</span>
+                <button class="service-item-btn js-open-modal" data-service="Диагностическая ревизия зуба (4590 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+            <div class="service-item-card">
+              <div class="service-item-main">
+                <div class="service-item-header">
+                  <h3 class="service-item-title">Первичный осмотр и консультация</h3>
+                  <span class="service-item-price">1 ₽</span>
+                </div>
+                <p class="service-item-desc">Знакомство с врачом-имплантологом или ортодонтом. Осмотр полости рта, составление плана лечения и финансовой сметы. Бесплатный прием!</p>
+              </div>
+              <div class="service-item-footer">
+                <span class="service-item-inclusion"><i class="fa-solid fa-circle-check"></i> По акции</span>
+                <button class="service-item-btn js-open-modal" data-service="Первичный осмотр (1 руб.)">Запись <i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- --- ABOUT CLINIC & DOCTOR --- -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-image-wrapper">
+            <img src="images/doctor.png" alt="Врач-имплантолог клиники Имплант Тайм проводит консультацию" class="about-image" width="500" height="500">
+            <div class="about-image-badge">
+              <div class="about-badge-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <div class="about-badge-text">
+                <h4>м. Арбатская</h4>
+                <p>Клиника в самом центре Москвы</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <span class="section-tag">О стоматологии</span>
+            <h3>Имплант Тайм — искусство создания идеальных улыбок</h3>
+            <p>Клиника «Имплант Тайм» — это специализированный центр дентальной имплантации и эстетической стоматологии. Мы объединили передовое зарубежное оборудование, передовые хирургические протоколы и команду профессионалов с многолетней практикой.</p>
+            <p>Наш главный приоритет — сохранение здоровья ваших зубов, безболезненное вмешательство и абсолютно прогнозируемый, долговечный результат лечения. Каждый кабинет оснащен системами стерилизации по строгим протоколам безопасности.</p>
+            
+            <div class="about-bullets">
+              <div class="about-bullet-item">
+                <div class="about-bullet-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4 class="about-bullet-title">Безопасно и стерильно</h4>
+                  <p class="about-bullet-desc">Контроль инфекционной безопасности по стандартам Анти-СПИД/Анти-Гепатит.</p>
+                </div>
+              </div>
+              <div class="about-bullet-item">
+                <div class="about-bullet-icon"><i class="fa-solid fa-microscope"></i></div>
+                <div>
+                  <h4 class="about-bullet-title">Цифровой подход</h4>
+                  <p class="about-bullet-desc">Компьютерное моделирование имплантации и ортодонтического лечения.</p>
+                </div>
+              </div>
+              <div class="about-bullet-item">
+                <div class="about-bullet-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                <div>
+                  <h4 class="about-bullet-title">Без боли и стресса</h4>
+                  <p class="about-bullet-desc">Современная местная анестезия. Безболезненные уколы и комфорт пациента.</p>
+                </div>
+              </div>
+              <div class="about-bullet-item">
+                <div class="about-bullet-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div>
+                  <h4 class="about-bullet-title">Честные цены</h4>
+                  <p class="about-bullet-desc">Прозрачные финансовые планы лечения под ключ без скрытых платежей.</p>
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn btn-primary js-open-modal" data-service="Экскурсия по клинике Имплант Тайм" id="about-tour-btn">Записаться на прием</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- --- FAQ SECTION --- -->
+    <section class="faq-section section-padding" id="faq">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-tag">Полезная информация</span>
+          <h2 class="section-title">Часто задаваемые <span>вопросы</span></h2>
+        </div>
+        
+        <div class="faq-wrapper">
+          
+          <div class="faq-card">
+            <div class="faq-header">
+              <h3 class="faq-question">Больно ли устанавливать имплантаты?</h3>
+              <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Нет, это абсолютно безболезненная процедура. Операция проводится под местной анестезией последнего поколения, которая полностью блокирует чувствительность. По ощущениям установка имплантата переносится даже легче, чем лечение глубокого кариеса. После окончания действия анестезии возможен легкий дискомфорт, который легко купируется обычными анальгетиками.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-card">
+            <div class="faq-header">
+              <h3 class="faq-question">Что такое концепция «Все-на-4» (All-on-4)?</h3>
+              <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Это методика полного восстановления зубного ряда при полной или почти полной адентии (отсутствии зубов). В челюсть вживляются всего 4 имплантата (два вертикально спереди, два под углом в боковых отделах), на которые в этот же день или через 2-3 дня жестко фиксируется несъемный временный протез. Пациент получает полноценные новые зубы всего за один визит к врачу.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-card">
+            <div class="faq-header">
+              <h3 class="faq-question">Какой срок службы у зубного имплантата?</h3>
+              <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Производители премиум-систем, такие как Nobel Biocare и Straumann, предоставляют пожизненную гарантию на свои имплантаты. При соблюдении правил гигиены полости рта, регулярном посещении стоматолога для профилактики (раз в полгода) и отсутствии тяжелых системных заболеваний, имплантаты надежно служат пациенту на протяжении всей жизни.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-card">
+            <div class="faq-header">
+              <h3 class="faq-question">В чем разница между лигатурными и безлигатурными брекетами?</h3>
+              <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>В лигатурных брекет-системах дуга крепится к замочкам с помощью специальных резинок или проволочек (лигатур), которые необходимо менять раз в месяц. В безлигатурных (самолигирующих) брекетах используются встроенные замочки-защелки. Это делает систему более эстетичной, снижает трение дуги, упрощает гигиену и требует визитов к ортодонту реже (раз в 1.5–2 месяца).</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- --- CONTACTS & MAP SECTION --- -->
+    <section class="contact-section section-padding" id="contacts">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info-card">
+            <div class="contact-header">
+              <span class="section-tag contact-tag">Мы на связи</span>
+              <h2 class="contact-title">Контакты клиники</h2>
+              <p class="contact-desc">Запишитесь на прием по телефону или посетите наш центр в самом сердце Москвы.</p>
+            </div>
+            
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                <div class="contact-item-text">
+                  <h4>Адрес клиники</h4>
+                  <p>121099, Москва, Большой Николопесковский переулок, дом 13</p>
+                  <p style="font-size:0.85rem; color:var(--accent-color); margin-top:4px;"><i class="fa-solid fa-person-walking"></i> 5 минут пешком от м. Арбатская (синяя/голубая линии)</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="contact-item-text">
+                  <h4>Телефоны</h4>
+                  <p><a href="tel:+74958774929" style="font-weight:700; font-size:1.1rem; color:var(--white);">+7 (495) 877-49-29</a></p>
+                  <p><a href="tel:+74958773971" style="color:var(--bg-color);">+7 (495) 877-39-71</a></p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-item-text">
+                  <h4>Время работы</h4>
+                  <p>Ежедневно с 10:00 до 21:00 (без выходных и перерывов)</p>
+                </div>
+              </div>
+            </div>
+            
+            <div style="display:flex; gap:16px;">
+              <a href="https://wa.me/74958774929" target="_blank" class="btn btn-outline" style="border-color:var(--success-color); color:var(--white); background-color:rgba(20, 190, 80, 0.15);"><i class="fa-brands fa-whatsapp"></i> Написать в WhatsApp</a>
+              <button class="btn btn-primary js-open-modal" data-service="Запись на прием в Контактах">Записаться онлайн</button>
+            </div>
+          </div>
+          
+          <!-- Live Yandex Map Widget -->
+          <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=165801121305" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative; border:none; display:block;"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="#" class="logo-wrapper" style="margin-bottom:10px; display:inline-flex;">
+            <div class="logo-icon">ИТ</div>
+            <span class="logo-text" style="color:var(--white)">Имплант<span style="color:var(--accent-color)">Тайм</span></span>
+          </a>
+          <p class="footer-copyright">&copy; 2026 ООО «ИмплантТайм». Все права защищены.</p>
+        </div>
+        
+        <p class="footer-licence">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА. Юридический адрес: г. Москва, Большой Николопесковский пер., д. 13. Медицинская лицензия на осуществление стоматологической деятельности выдана Департаментом здравоохранения города Москвы.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- BOOKING MODAL WINDOW --- -->
+  <div class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close js-close-modal" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="modal-title">Запись на прием</h3>
+      <p class="modal-desc">Оставьте свои контактные данные, и администратор клиники свяжется с вами для подтверждения записи.</p>
+      
+      <form class="js-booking-form" id="modal-lead-form">
+        <div class="form-group">
+          <label for="modal-form-name" class="form-label">Ваше имя *</label>
+          <input type="text" name="name" class="form-input" id="modal-form-name" placeholder="Иван Иванов" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-form-phone" class="form-label">Телефон связи *</label>
+          <input type="tel" name="phone" class="form-input" id="modal-form-phone" placeholder="+7 (999) 000-00-00" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-service" class="form-label">Желаемая услуга</label>
+          <select name="service" class="form-input" id="modal-service">
+            <option value="Первичная консультация имплантолога">Первичный прием имплантолога (1 ₽ / Бесплатно)</option>
+            <option value="Имплантация Nobel Biocare">Имплантация Nobel Biocare (29 990 ₽)</option>
+            <option value="Имплантация Lenmiriot">Имплантация Lenmiriot (13 990 ₽)</option>
+            <option value="Имплантация Straumann">Имплантация Straumann (49 990 ₽)</option>
+            <option value="Концепция All-on-4">Имплантация All-on-4 (от 84 990 ₽)</option>
+            <option value="Брекеты / Ортодонтия">Установка брекетов (от 39 900 ₽)</option>
+            <option value="Профессиональная гигиена">Профессиональная гигиена зубов (6 000 ₽)</option>
+            <option value="Заказ обратного звонка">Заказ обратного звонка</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary form-submit-btn" id="modal-form-submit">Подтвердить запись</button>
+        <p class="form-agreement">Нажимая кнопку, вы даете согласие на обработку персональных данных.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- --- TOAST NOTIFICATION --- -->
+  <div class="toast-notification" role="status" aria-live="polite">
+    <div style="font-size: 1.5rem;"><i class="fa-solid fa-circle-check"></i></div>
+    <div id="toast-message">Ваша заявка успешно отправлена!</div>
+  </div>
+
+  <!-- JS Script -->
+  <script src="app.js"></script>
+</body>
+</html>
